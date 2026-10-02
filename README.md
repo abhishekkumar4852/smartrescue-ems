@@ -50,7 +50,7 @@ grid outages, low-battery conditions, and demand-response events.
 
 ## ⚙️ Main Components
 
-| File | Purpose |
+| File | Purpose |                            
 |------|---------|
 | `app.py` | Streamlit dashboard and visualization |
 | `simulator.py` | Simulates solar, grid and microgrid conditions |
@@ -61,5 +61,5 @@ grid outages, low-battery conditions, and demand-response events.
 | `microgrid.py` | Integrates the complete EMS system |
 | `metrics.py` | Calculates system performance metrics |
 | `logger.py` | Records simulation events and system activity |
-| `scenarios.py` | Provides predefined microgrid operating scenarios |
+| `scenarios.py` | Provides predefined microgrid operating scenarios | n
 
