@@ -1,60 +1,65 @@
-# SmartRescue EMS
+# ⚡ SmartRescue EMS
 
-## Software-Based Microgrid Energy Management System
+## Smart Microgrid Energy Management System
 
-SmartRescue EMS is a software-based Energy Management System designed to simulate and manage a microgrid using solar power, battery storage, grid power, and prioritized electrical loads.
+SmartRescue EMS is a software-based Energy Management System designed
+to intelligently manage power in a microgrid using solar generation,
+battery storage, grid supply, and priority-based loads.
 
-## Key Features
+The system continuously monitors available power and automatically
+manages loads to protect critical services during power shortages,
+grid outages, low-battery conditions, and demand-response events.
 
-- Renewable energy monitoring
-- Battery state-of-charge monitoring
-- Priority-based load management
-- Automatic load shedding
-- Automatic load restoration
-- Battery reserve protection
-- Demand-response control
-- Grid outage simulation
-- Performance monitoring
-- Streamlit dashboard
+---
 
-## Priority Levels
+## 🚀 Key Features
 
-- P0 – Critical loads
-- P1 – High-priority loads
-- P2 – Medium-priority loads
-- P3 – Flexible loads
-- P4 – Lowest-priority loads
+- ☀️ Solar power monitoring
+- 🔋 Battery State of Charge (SOC) monitoring
+- ⚡ Grid availability monitoring
+- 🎯 Priority-based load management
+- 🔌 Automatic load shedding
+- 🔄 Automatic load restoration
+- 🛡️ Critical-load protection
+- 📉 Demand-response management
+- 📊 Real-time dashboard
+- 📈 Performance metrics
+- 🧪 Multiple operating scenarios
 
-## Demonstration Scenarios
+---
 
-1. Sunny Day
-2. Evening Peak
-3. Cloud Event
-4. Grid Outage
-5. Low Battery
-
-## Technology Stack
-
-- Python
-- Streamlit
-- Pandas
-- Microgrid simulation
-- Rule-based EMS control
-
-## Project Structure
+## 🏗️ System Architecture
 
 ```text
-smartrescue_ems/
-├── ems/
-│   ├── app.py
-│   ├── battery.py
-│   ├── controller.py
-│   ├── demand_response.py
-│   ├── loads.py
-│   ├── logger.py
-│   ├── metrics.py
-│   ├── microgrid.py
-│   ├── scenarios.py
-│   └── simulator.py
-├── venv/
-└── README.md
+                    SmartRescue EMS
+                           │
+                           ▼
+                    Streamlit Dashboard
+                           │
+                           ▼
+                    EMS Decision Engine
+                           │
+            ┌──────────────┼──────────────┐
+            ▼              ▼              ▼
+       Microgrid       Battery         Loads
+       Simulator       Manager        Controller
+            │
+      ┌─────┼─────┐
+      ▼     ▼     ▼
+    Solar  Grid  Demand
+
+## ⚙️ Main Components
+
+| File | Purpose |
+|------|---------|
+| `app.py` | Streamlit dashboard and visualization |
+| `simulator.py` | Simulates solar, grid and microgrid conditions |
+| `battery.py` | Manages battery SOC, charging and discharging |
+| `loads.py` | Defines microgrid loads and their priority levels |
+| `controller.py` | Applies priority-based load control and load shedding |
+| `demand_response.py` | Handles demand-response events and flexible loads |
+| `microgrid.py` | Integrates the complete EMS system |
+| `metrics.py` | Calculates system performance metrics |
+| `logger.py` | Records simulation events and system activity |
+| `scenarios.py` | Provides predefined microgrid operating scenarios |
+
